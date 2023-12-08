@@ -16,6 +16,10 @@
 		445FECB42B21D152000E54B4 /* Music_App___CSC_648Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECB32B21D152000E54B4 /* Music_App___CSC_648Tests.swift */; };
 		445FECBE2B21D153000E54B4 /* Music_App___CSC_648UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECBD2B21D153000E54B4 /* Music_App___CSC_648UITests.swift */; };
 		445FECC02B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECBF2B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift */; };
+		445FECCD2B22AE82000E54B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECCC2B22AE82000E54B4 /* LoginViewController.swift */; };
+		445FECCF2B22B2DF000E54B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECCE2B22B2DF000E54B4 /* SignUpViewController.swift */; };
+		445FECD12B22CC3D000E54B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */; };
+		445FECD42B22CDF9000E54B4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 445FECD32B22CDF9000E54B4 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,9 @@
 		445FECB92B21D153000E54B4 /* Music App - CSC 648UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music App - CSC 648UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		445FECBD2B21D153000E54B4 /* Music_App___CSC_648UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Music_App___CSC_648UITests.swift"; sourceTree = "<group>"; };
 		445FECBF2B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Music_App___CSC_648UITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		445FECCC2B22AE82000E54B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		445FECCE2B22B2DF000E54B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445FECD42B22CDF9000E54B4 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,9 +111,12 @@
 				445FEC9E2B21D14F000E54B4 /* SceneDelegate.swift */,
 				445FECA02B21D14F000E54B4 /* ViewController.swift */,
 				445FECA22B21D14F000E54B4 /* Main.storyboard */,
+				445FECCE2B22B2DF000E54B4 /* SignUpViewController.swift */,
+				445FECCC2B22AE82000E54B4 /* LoginViewController.swift */,
 				445FECA52B21D152000E54B4 /* Assets.xcassets */,
 				445FECA72B21D152000E54B4 /* LaunchScreen.storyboard */,
 				445FECAA2B21D152000E54B4 /* Info.plist */,
+				445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */,
 			);
 			path = "Music App - CSC 648";
 			sourceTree = "<group>";
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = "Music App - CSC 648";
+			packageProductDependencies = (
+				445FECD32B22CDF9000E54B4 /* FirebaseAuth */,
+			);
 			productName = "Music App - CSC 648";
 			productReference = 445FEC992B21D14F000E54B4 /* Music App - CSC 648.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 445FEC902B21D14F000E54B4;
+			packageReferences = (
+				445FECD22B22CDF9000E54B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 445FEC9A2B21D14F000E54B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				445FECA92B21D152000E54B4 /* LaunchScreen.storyboard in Resources */,
+				445FECD12B22CC3D000E54B4 /* GoogleService-Info.plist in Resources */,
 				445FECA62B21D152000E54B4 /* Assets.xcassets in Resources */,
 				445FECA42B21D14F000E54B4 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445FECCD2B22AE82000E54B4 /* LoginViewController.swift in Sources */,
 				445FECA12B21D14F000E54B4 /* ViewController.swift in Sources */,
 				445FEC9D2B21D14F000E54B4 /* AppDelegate.swift in Sources */,
 				445FEC9F2B21D14F000E54B4 /* SceneDelegate.swift in Sources */,
+				445FECCF2B22B2DF000E54B4 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +621,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		445FECD22B22CDF9000E54B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		445FECD32B22CDF9000E54B4 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 445FECD22B22CDF9000E54B4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 445FEC912B21D14F000E54B4 /* Project object */;
 }
