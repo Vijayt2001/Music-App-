@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_App___CSC_648" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MusicViewController" customModule="Music_App___CSC_648" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="loginClicked:" destination="wJp-rG-NTd" eventType="touchUpInside" id="74D-2D-M9F"/>
-                                    <segue destination="TEB-Fd-LW8" kind="show" id="JGv-3C-mQg"/>
+                                    <segue destination="O8W-5P-RBp" kind="show" id="J29-fc-e1a"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5tS-iw-o1s">
@@ -148,7 +148,6 @@
                     <connections>
                         <outlet property="emailTextField" destination="dWM-Ls-cen" id="cc1-ba-WKA"/>
                         <outlet property="passwordTextField" destination="agL-le-HiX" id="ci7-5u-Q3j"/>
-                        <segue destination="TEB-Fd-LW8" kind="show" identifier="goToNext" id="lFm-yH-4uR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mzj-P9-dfw" sceneMemberID="firstResponder"/>
@@ -198,7 +197,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signupClicked:" destination="WR4-GS-0BR" eventType="touchUpInside" id="i4W-E0-Zqw"/>
-                                    <segue destination="wJp-rG-NTd" kind="show" id="Jj5-RF-anJ"/>
+                                    <segue destination="O8W-5P-RBp" kind="show" id="k09-FO-QJa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -209,33 +208,102 @@
                     <connections>
                         <outlet property="emailTextField" destination="bi4-yL-zix" id="TOt-GH-knB"/>
                         <outlet property="passwordTextField" destination="lT2-pD-S6f" id="6iR-dw-Beq"/>
-                        <segue destination="TEB-Fd-LW8" kind="show" identifier="goToNext" id="sbq-cc-3rA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FuW-xp-GXt" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1251.145038167939" y="345.77464788732397"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gsW-wh-Nyi">
+        <!--Music-->
+        <scene sceneID="14v-Zp-rSr">
             <objects>
-                <viewController id="TEB-Fd-LW8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tvV-uv-K7Z">
+                <viewController id="O8W-5P-RBp" customClass="ViewController" customModule="Music_App___CSC_648" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Cg-XT-2cA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="feX-7s-giE"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-Kk-K2C">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="P96-LX-NdG" detailTextLabel="kxA-ya-8n3" style="IBUITableViewCellStyleSubtitle" id="iJx-wL-yOI">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="55.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iJx-wL-yOI" id="033-RJ-O6c">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="55.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P96-LX-NdG">
+                                                    <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kxA-ya-8n3">
+                                                    <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tgr-YB-CMB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2n6-Kk-K2C" firstAttribute="leading" secondItem="tgr-YB-CMB" secondAttribute="leading" id="3xQ-yp-gBC"/>
+                            <constraint firstItem="tgr-YB-CMB" firstAttribute="bottom" secondItem="2n6-Kk-K2C" secondAttribute="bottom" id="MGn-Zl-gxB"/>
+                            <constraint firstItem="2n6-Kk-K2C" firstAttribute="top" secondItem="tgr-YB-CMB" secondAttribute="top" id="RdG-6C-pJY"/>
+                            <constraint firstItem="tgr-YB-CMB" firstAttribute="trailing" secondItem="2n6-Kk-K2C" secondAttribute="trailing" id="lAf-pe-UAO"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="xPS-8l-T0D"/>
+                    <navigationItem key="navigationItem" title="Music" id="5b7-5D-BLj"/>
+                    <connections>
+                        <outlet property="table" destination="2n6-Kk-K2C" id="Wh0-bH-nlB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kqv-56-aP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tME-nq-x5T" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="37"/>
+            <point key="canvasLocation" x="2179" y="-44"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="xJL-qh-Ehu">
+            <objects>
+                <viewController storyboardIdentifier="player" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0zp-bw-5Dg" customClass="PlayerViewController" customModule="Music_App___CSC_648" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C7m-mC-yNa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yEL-EI-II9">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" red="0.24251104955861569" green="0.88365767719842414" blue="0.97439417888208768" alpha="0.54565284365699407" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bQy-ZB-0yd"/>
+                        <color key="backgroundColor" red="0.44442212535093628" green="0.45876538229460057" blue="0.52041885533283661" alpha="0.43890578081818665" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bQy-ZB-0yd" firstAttribute="trailing" secondItem="yEL-EI-II9" secondAttribute="trailing" id="P6f-hr-5VA"/>
+                            <constraint firstItem="yEL-EI-II9" firstAttribute="top" secondItem="bQy-ZB-0yd" secondAttribute="top" id="Pdc-z8-Nbf"/>
+                            <constraint firstItem="yEL-EI-II9" firstAttribute="leading" secondItem="bQy-ZB-0yd" secondAttribute="leading" id="fR8-nm-JSW"/>
+                            <constraint firstItem="bQy-ZB-0yd" firstAttribute="bottom" secondItem="yEL-EI-II9" secondAttribute="bottom" id="zKI-Jl-jr8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="holder" destination="yEL-EI-II9" id="oMT-Zm-O9b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvb-d3-ojK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2966" y="-70"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lFm-yH-4uR"/>
-        <segue reference="nlJ-1j-PC9"/>
+        <segue reference="k09-FO-QJa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="darkTextColor">

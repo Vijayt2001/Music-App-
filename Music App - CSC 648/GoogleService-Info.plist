@@ -3,28 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCoy1HDx3qcKvBU4tlKFYVluCSqL122Gxw</string>
+	<string>AIzaSyB23RDvKpeKZTKQtQdvBywGyY1Q1iGqpCg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>274979223910</string>
+	<string>56876670219</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>sfsu.Music-App---CSC-648</string>
 	<key>PROJECT_ID</key>
-	<string>music-app-d604a</string>
+	<string>musica-5eb3c</string>
 	<key>STORAGE_BUCKET</key>
-	<string>music-app-d604a.appspot.com</string>
+	<string>musica-5eb3c.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:274979223910:ios:bcac2ac665acb77b0a30a7</string>
+	<string>1:56876670219:ios:d6c11aea44c3b2a29b960e</string>
 </dict>
 </plist>

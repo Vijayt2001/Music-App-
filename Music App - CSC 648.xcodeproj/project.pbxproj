@@ -18,8 +18,15 @@
 		445FECC02B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECBF2B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift */; };
 		445FECCD2B22AE82000E54B4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECCC2B22AE82000E54B4 /* LoginViewController.swift */; };
 		445FECCF2B22B2DF000E54B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FECCE2B22B2DF000E54B4 /* SignUpViewController.swift */; };
-		445FECD12B22CC3D000E54B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */; };
 		445FECD42B22CDF9000E54B4 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 445FECD32B22CDF9000E54B4 /* FirebaseAuth */; };
+		44A3C7242B27F20E002CAB75 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C7232B27F20E002CAB75 /* MusicViewController.swift */; };
+		44A3C7262B27F29E002CAB75 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A3C7252B27F29E002CAB75 /* PlayerViewController.swift */; };
+		44A3C72E2B2845B0002CAB75 /* DarkKnight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C72D2B2845B0002CAB75 /* DarkKnight.mp3 */; };
+		44A3C7302B284665002CAB75 /* Interstellar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C72F2B284665002CAB75 /* Interstellar.mp3 */; };
+		44A3C7322B28485B002CAB75 /* Oppenhimer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C7312B28485B002CAB75 /* Oppenhimer.mp3 */; };
+		44A3C7342B284A19002CAB75 /* JohnWick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C7332B284A19002CAB75 /* JohnWick.mp3 */; };
+		44A3C7362B284A9E002CAB75 /* portals.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C7352B284A9E002CAB75 /* portals.mp3 */; };
+		44A3C7382B284DDC002CAB75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44A3C7372B284DDC002CAB75 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +62,14 @@
 		445FECBF2B21D153000E54B4 /* Music_App___CSC_648UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Music_App___CSC_648UITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		445FECCC2B22AE82000E54B4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		445FECCE2B22B2DF000E54B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44A3C7232B27F20E002CAB75 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		44A3C7252B27F29E002CAB75 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		44A3C72D2B2845B0002CAB75 /* DarkKnight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DarkKnight.mp3; sourceTree = "<group>"; };
+		44A3C72F2B284665002CAB75 /* Interstellar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Interstellar.mp3; sourceTree = "<group>"; };
+		44A3C7312B28485B002CAB75 /* Oppenhimer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Oppenhimer.mp3; sourceTree = "<group>"; };
+		44A3C7332B284A19002CAB75 /* JohnWick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JohnWick.mp3; sourceTree = "<group>"; };
+		44A3C7352B284A9E002CAB75 /* portals.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = portals.mp3; sourceTree = "<group>"; };
+		44A3C7372B284DDC002CAB75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +121,14 @@
 		445FEC9B2B21D14F000E54B4 /* Music App - CSC 648 */ = {
 			isa = PBXGroup;
 			children = (
+				44A3C7312B28485B002CAB75 /* Oppenhimer.mp3 */,
+				44A3C72D2B2845B0002CAB75 /* DarkKnight.mp3 */,
+				44A3C72F2B284665002CAB75 /* Interstellar.mp3 */,
+				44A3C7332B284A19002CAB75 /* JohnWick.mp3 */,
+				44A3C7352B284A9E002CAB75 /* portals.mp3 */,
 				445FEC9C2B21D14F000E54B4 /* AppDelegate.swift */,
+				44A3C7232B27F20E002CAB75 /* MusicViewController.swift */,
+				44A3C7252B27F29E002CAB75 /* PlayerViewController.swift */,
 				445FEC9E2B21D14F000E54B4 /* SceneDelegate.swift */,
 				445FECA02B21D14F000E54B4 /* ViewController.swift */,
 				445FECA22B21D14F000E54B4 /* Main.storyboard */,
@@ -116,7 +137,7 @@
 				445FECA52B21D152000E54B4 /* Assets.xcassets */,
 				445FECA72B21D152000E54B4 /* LaunchScreen.storyboard */,
 				445FECAA2B21D152000E54B4 /* Info.plist */,
-				445FECD02B22CC3D000E54B4 /* GoogleService-Info.plist */,
+				44A3C7372B284DDC002CAB75 /* GoogleService-Info.plist */,
 			);
 			path = "Music App - CSC 648";
 			sourceTree = "<group>";
@@ -249,9 +270,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				445FECA92B21D152000E54B4 /* LaunchScreen.storyboard in Resources */,
-				445FECD12B22CC3D000E54B4 /* GoogleService-Info.plist in Resources */,
+				44A3C7382B284DDC002CAB75 /* GoogleService-Info.plist in Resources */,
+				44A3C72E2B2845B0002CAB75 /* DarkKnight.mp3 in Resources */,
+				44A3C7362B284A9E002CAB75 /* portals.mp3 in Resources */,
+				44A3C7322B28485B002CAB75 /* Oppenhimer.mp3 in Resources */,
 				445FECA62B21D152000E54B4 /* Assets.xcassets in Resources */,
 				445FECA42B21D14F000E54B4 /* Main.storyboard in Resources */,
+				44A3C7302B284665002CAB75 /* Interstellar.mp3 in Resources */,
+				44A3C7342B284A19002CAB75 /* JohnWick.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +306,9 @@
 				445FECA12B21D14F000E54B4 /* ViewController.swift in Sources */,
 				445FEC9D2B21D14F000E54B4 /* AppDelegate.swift in Sources */,
 				445FEC9F2B21D14F000E54B4 /* SceneDelegate.swift in Sources */,
+				44A3C7262B27F29E002CAB75 /* PlayerViewController.swift in Sources */,
 				445FECCF2B22B2DF000E54B4 /* SignUpViewController.swift in Sources */,
+				44A3C7242B27F20E002CAB75 /* MusicViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
